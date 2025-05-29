@@ -93,10 +93,10 @@ if not is_ait_launch:
     requirements_generator.add_package('pandas', '2.2.3')
     requirements_generator.add_package('evaluate', '0.4.3')
     requirements_generator.add_package('ipywidgets', '8.1.5')
-    requirements_generator.add_package('transformers', '4.47.0')
-    requirements_generator.add_package('torch', '2.5.1')
-    requirements_generator.add_package('torchvision', '0.20.1')
-    requirements_generator.add_package('torchaudio', '2.5.1')
+    requirements_generator.add_package('transformers', '4.52.1')
+    requirements_generator.add_package('torch', '2.7.0')
+    requirements_generator.add_package('torchvision', '0.22.0')
+    requirements_generator.add_package('torchaudio', '2.7.0')
     requirements_generator.add_package('rouge-score', '0.1.2')
 
 
@@ -163,7 +163,7 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_name('eval_llm_rouge_score')
     manifest_genenerator.set_ait_description('MLFlowを使用して、LLMモデルでテキストに対してレジュメ生成し、その生成されたテキストの品質を評価します。LLM評価基準を用いて、テキストのROUGEスコアを計算し、テキストの質を数値化します。')
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_llm_rouge_score')
-    manifest_genenerator.set_ait_version('1.0')
+    manifest_genenerator.set_ait_version('1.1')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('LLM')
     manifest_genenerator.add_ait_keywords('MLFlow')
@@ -474,7 +474,7 @@ def main() -> None:
 
 # [uneditable]
 
-# In[ ]:
+# In[17]:
 
 
 if __name__ == '__main__':
