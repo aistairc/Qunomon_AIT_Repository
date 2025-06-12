@@ -157,7 +157,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('alyz_dataset_surprise_coverage')
     manifest_genenerator.set_ait_description('モデルがテストデータに対して意外性のある入力をどれだけカバーしているかを測定することでデータセットの多様性を評価する。\nこれにより、データセットが異なる特徴を豊富に含んでいるかを把握することができる。分布に基づいた評価と空間的な距離に基づいた評価の2つの観点からデータセットの多様性を評価することでより安定した評価ができる。')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_alyz_dataset_surprise_coverage')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/alyz_dataset_surprise_coverage')
     manifest_genenerator.set_ait_version('1.2')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('Surprise Coverage')
