@@ -150,7 +150,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('alyz_dataset_table_counts_attr_coverage')
     manifest_genenerator.set_ait_description('【データの被覆性】を評価するため、データ内の属性組み合わせのレコード件数に着目し、レアケースやインバランスな傾向がないかを評価すること ※カテゴリー属性のみ対象となる')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_alyz_dataset_table_counts_attr_coverage')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/alyz_dataset_table_counts_attr_coverage')
     manifest_genenerator.set_ait_version('1.3')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('Data Coverage')
