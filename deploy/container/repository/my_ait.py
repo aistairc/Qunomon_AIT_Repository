@@ -169,7 +169,7 @@ if not is_ait_launch:
     manifest_generator = AITManifestGenerator(current_dir)
     manifest_generator.set_ait_name('eval_surprise_adequacy')
     manifest_generator.set_ait_description('入力VAEモデルのサプライズ適切性（SA）を計算しています。SAは、入力データの各サンプルに対する各ニューロンの活動トレースを評価します。詳細については、元の論文「Kim, et al. Evaluating Surprise Adequacy for Deep Learning System Testing」（URL: https://dl.acm.org/doi/full/10.1145/3546947）')
-    manifest_generator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_surprise_adequacy')
+    manifest_generator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_surprise_adequacy')
     manifest_generator.set_ait_version('1.4')
     manifest_generator.add_ait_licenses('Apache License Version 2.0')
     manifest_generator.add_ait_keywords('evaluation')
