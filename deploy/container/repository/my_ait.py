@@ -174,7 +174,7 @@ if not is_ait_launch:
         'KLDが0に近いほど、2つの画像群は同じ特徴を再現していると評価できる。'
     )
     manifest_genenerator.set_ait_description(ait_description)
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_dataset_image_3features_kld')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_dataset_image_3features_kld')
     manifest_genenerator.set_ait_version('0.8')
     manifest_genenerator.add_ait_keywords('KLD')
     manifest_genenerator.add_ait_keywords('image')
