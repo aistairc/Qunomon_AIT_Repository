@@ -158,7 +158,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('eval_correctness_image_classifier_pytorch')
     manifest_genenerator.set_ait_description('【機械学習モデルの正確性】を評価するため、データセットをランダムに分割し、それぞれの分割されたデータセットを対象としモデルで精度算出すること。その精度差が低ければ、モデルはデータセットに対し汎用的な性能を獲得していると判断すること。')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_correctness_image_classifier_pytorch')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_correctness_image_classifier_pytorch')
     manifest_genenerator.set_ait_version('1.5')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('pytorch')
