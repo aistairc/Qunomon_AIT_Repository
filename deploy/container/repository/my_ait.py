@@ -163,7 +163,7 @@ if not is_ait_launch:
     manifest_generator = AITManifestGenerator(current_dir)
     manifest_generator.set_ait_name('eval_map_yolo_torch')
     manifest_generator.set_ait_description('pytorchの物体検出モデルの推論結果から、テストデータのmean Average Precision(mAP)をを算出し、精度を評価する。\\n \\begin{align}AP=\\frac{1}{N}\sum_{i=1}^{N}P(R_{i})\\end{align} \\n \\begin{align}mAP=\\frac{1}{C}\sum_{c=1}^{C}AP_{c}\\end{align}  \\n ここで、\\begin{align}R_{i}\\end{align}は異なる再現率のポイント、\\begin{align}P(R_{i})\\end{align}はその点での適合率、Cはクラス数、\\begin{align}AP_{c}\\end{align}はクラスcに対するAverage Precision(AP)')
-    manifest_generator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_map_yolo_torch')
+    manifest_generator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_map_yolo_torch')
     manifest_generator.set_ait_version('0.4')
     manifest_generator.add_ait_licenses('Apache License Version 2.0')
     manifest_generator.add_ait_keywords('AIT')
