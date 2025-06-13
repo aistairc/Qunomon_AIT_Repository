@@ -170,7 +170,7 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_description(
         '複数の説明変数と1つの目的変数で構築された重回帰分析のモデルのRMSE(Root Mean Square Error)とMAE(Mean Absolute Error)を計算する。RMSEとMAEはともに予測値と実際の値の差を利用して定められているため、値が低いほど品質が良いと言える。'
     )
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_model_regression_rmse_and_mae')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_model_regression_rmse_and_mae')
     manifest_genenerator.set_ait_version('0.3')
     keywords = ['regression', 'multiple regression analysis', 'rmse', 'mae']
     for keyword in keywords:
