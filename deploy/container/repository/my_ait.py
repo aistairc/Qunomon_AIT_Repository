@@ -160,7 +160,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('alyz_dataset_topcoverage_auc')
     manifest_genenerator.set_ait_description('データセットにおけるデータの分布のデータ密度が高い領域から考えて、上位p%の領域の面積をSとする。pの値を0から1に変化させたときの面積Sの変化を確認することでデータの均一性を判断する。テーブルデータセットの場合は、指定された列の分布を使用し、指定された列で組分けを行い均一性を測定する。画像データセットの場合は物体の面積比率、平均明度、および物体の中心座標の原点からの距離の分布を使用する。')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_alyz_dataset_topcoverage_auc')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/alyz_dataset_topcoverage_auc')
     manifest_genenerator.set_ait_version('1.2')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('AUC')
