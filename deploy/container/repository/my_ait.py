@@ -114,7 +114,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('alyz_dataset_table_counts_comb_all_attr')
     manifest_genenerator.set_ait_description('表データの属性の組み合わせで属性値のカウントや出現割合を算出する\nこのサマリ情報を元に、表データの出現頻度の分布傾向を推察することができる')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_alyz_dataset_table_counts_comb_all_attr')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/alyz_dataset_table_counts_comb_all_attr')
     manifest_genenerator.set_ait_version('0.4')
     manifest_genenerator.add_ait_keywords('BDD100K')
     manifest_genenerator.add_ait_keywords('recode count')
