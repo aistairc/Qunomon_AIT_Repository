@@ -172,7 +172,7 @@ if not is_ait_launch:
     manifest_generator.set_ait_name('eval_noise_score_aquavs')
     manifest_generator.set_ait_description('モデルの安定性を評価するために、ノイズを付けたラベルで検証します。SVAEの潜在表現を使用し、入力データセット内の各サンプルの異常を測定する「ノイズスコア」を計測します。詳細については、元の論文「Pulastya, et al. Assessing the quality of the datasets by identifying mislabeled samples」(URL: https://dl.acm.org/doi/abs/10.1145/3487351.3488361)')
 
-    manifest_generator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_noise_score_aquavs')
+    manifest_generator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_noise_score_aquavs')
     manifest_generator.add_ait_licenses('Apache License Version 2.0')
     manifest_generator.set_ait_version('1.5')
     manifest_generator.add_ait_keywords('Evaluation')
