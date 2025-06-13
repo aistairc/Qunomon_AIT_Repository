@@ -169,7 +169,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('eval_model_peformance_pytorch')
     manifest_genenerator.set_ait_description('pytorchの分類モデルの推論結果から、テストデータのaccuracy、AP(average precision)、balanced accuracyを算出し、精度を評価する。\nさらに各クラスのF値を算出し、各クラスに対する強弱を分析する。また、F値のマクロ・マイクロ・加重平均を算出することで、少数クラスの性能やモデル全体の総合的な性能、データの不均衡を考慮した全体の性能を確認・評価できる。')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_model_peformance_pytorch')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_model_peformance_pytorch')
     manifest_genenerator.set_ait_version('0.10')
     manifest_genenerator.add_ait_keywords('h5')
     manifest_genenerator.add_ait_keywords('accuracy')
