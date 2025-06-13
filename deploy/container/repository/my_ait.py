@@ -153,7 +153,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('eval_llm_perplexity_score')
     manifest_genenerator.set_ait_description('LLMモデルで問題領域の質問に対して回答し、その生成されたテキストの品質を評価します。LLM評価基準を用いて、回答テキストのPerplexityスコアを計算し、テキストの質を数値化します。')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_llm_perplexity_score')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_llm_perplexity_score')
     manifest_genenerator.set_ait_version('1.0')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('LLM')
