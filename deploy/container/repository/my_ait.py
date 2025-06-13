@@ -113,7 +113,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('alyz_dataset_table_counts_comb_two_attr')
     manifest_genenerator.set_ait_description('表データ内の不要な（ありえない）属性値の組み合わせを指定し、表データ内にどれだけその不要なデータが含まれているか、属性値のカウントや出現割合を算出する\nAIT利用者はこのサマリ情報を元に、属性値の（出現傾向に着目した）不健全性を把握できる')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_alyz_dataset_table_counts_comb_two_attr')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/alyz_dataset_table_counts_comb_two_attr')
     manifest_genenerator.set_ait_version('0.4')
     manifest_genenerator.add_ait_keywords('BDD100K')
     manifest_genenerator.add_ait_keywords('recode count')
