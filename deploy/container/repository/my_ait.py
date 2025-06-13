@@ -153,7 +153,7 @@ if not is_ait_launch:
     manifest_genenerator = AITManifestGenerator(current_dir)
     manifest_genenerator.set_ait_name('eval_llm_meteor_score')
     manifest_genenerator.set_ait_description('LLMモデルで翻訳タスクを実行し、生成された翻訳テキストの品質をMETEORスコアで評価します。このスコアを使用して、翻訳の品質を数値化し、モデル性能を測定します。')
-    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_llm_meteor_score')
+    manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_llm_meteor_score')
     manifest_genenerator.set_ait_version('1.0')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('LLM')
