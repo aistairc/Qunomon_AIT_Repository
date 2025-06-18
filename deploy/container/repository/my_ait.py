@@ -91,15 +91,15 @@ if not is_ait_launch:
 # should edit
 #########################################
 if not is_ait_launch:
-    requirements_generator.add_package('torch', '2.5.1')
-    requirements_generator.add_package('pandas', '2.2.3')
+    requirements_generator.add_package('torch', '2.7.1')
+    requirements_generator.add_package('pandas', '2.3.0')
     requirements_generator.add_package('matplotlib', '3.9.4')
     requirements_generator.add_package('seaborn', '0.13.2')
     requirements_generator.add_package('numpy', '2.0.2')
     requirements_generator.add_package('scikit-learn', '1.6.1')
 
 
-# In[5]:
+# In[ ]:
 
 
 #########################################
@@ -113,7 +113,7 @@ if not is_ait_launch:
     get_ipython().system('pip install -r $requirements_path ')
 
 
-# In[6]:
+# In[ ]:
 
 
 #########################################
@@ -136,7 +136,7 @@ from pathlib import Path
 from os import makedirs, path
 
 
-# In[7]:
+# In[ ]:
 
 
 #########################################
@@ -155,7 +155,7 @@ from ait_sdk.develop.annotation import measures, resources, downloads, ait_main 
 # must use modules
 
 
-# In[8]:
+# In[ ]:
 
 
 #########################################
@@ -171,7 +171,7 @@ if not is_ait_launch:
         '複数の説明変数と1つの目的変数で構築された重回帰分析のモデルのRMSE(Root Mean Square Error)とMAE(Mean Absolute Error)を計算する。RMSEとMAEはともに予測値と実際の値の差を利用して定められているため、値が低いほど品質が良いと言える。'
     )
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_model_regression_rmse_and_mae')
-    manifest_genenerator.set_ait_version('0.3')
+    manifest_genenerator.set_ait_version('0.4')
     keywords = ['regression', 'multiple regression analysis', 'rmse', 'mae']
     for keyword in keywords:
         manifest_genenerator.add_ait_keywords(keyword=keyword)
@@ -245,7 +245,7 @@ if not is_ait_launch:
     manifest_path = manifest_genenerator.write()
 
 
-# In[9]:
+# In[ ]:
 
 
 #########################################
@@ -266,7 +266,7 @@ if not is_ait_launch:
     input_generator.write()
 
 
-# In[10]:
+# In[ ]:
 
 
 #########################################
@@ -297,7 +297,7 @@ ait_manifest.read_json(path_helper.get_manifest_file_path())
 ### do not edit cell
 
 
-# In[11]:
+# In[ ]:
 
 
 #########################################
@@ -310,7 +310,7 @@ def measure_rmse(rmse):
     return float(str(rmse))
 
 
-# In[12]:
+# In[ ]:
 
 
 #########################################
@@ -323,7 +323,7 @@ def measure_mae(mae):
     return float(str(mae))
 
 
-# In[13]:
+# In[ ]:
 
 
 #########################################
@@ -339,7 +339,7 @@ def save_index_matrix(csv_data, file_path: str=None) -> None:
     return file_path
 
 
-# In[14]:
+# In[ ]:
 
 
 #########################################
@@ -362,7 +362,7 @@ def save_predicted_plot(Y, predict, file_path: str=None) -> None:
     return file_path
 
 
-# In[15]:
+# In[ ]:
 
 
 #########################################
@@ -377,7 +377,7 @@ def move_log(file_path: str=None) -> None:
     shutil.move(get_log_path(), file_path)
 
 
-# In[16]:
+# In[ ]:
 
 
 #########################################
@@ -453,7 +453,7 @@ def main() -> None:
     move_log()
 
 
-# In[17]:
+# In[ ]:
 
 
 #########################################
@@ -464,7 +464,7 @@ if __name__ == '__main__':
     main()
 
 
-# In[18]:
+# In[ ]:
 
 
 #########################################
@@ -475,7 +475,7 @@ ait_owner='AIST'
 ait_creation_year='2020'
 
 
-# In[19]:
+# In[ ]:
 
 
 #########################################
