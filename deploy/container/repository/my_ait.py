@@ -38,7 +38,7 @@
 
 # [uneditable]
 
-# In[ ]:
+# In[1]:
 
 
 # Determine whether to start AIT or jupyter by startup argument
@@ -90,11 +90,11 @@ if not is_ait_launch:
 
 if not is_ait_launch:
     requirements_generator.add_package('adversarial-robustness-toolbox', '1.19.0')
-    requirements_generator.add_package('numpy','1.26.4')
-    requirements_generator.add_package('h5py','3.12.1')
-    requirements_generator.add_package('torch','2.5.1')
+    requirements_generator.add_package('numpy','2.0.2')
+    requirements_generator.add_package('h5py','3.14.0')
+    requirements_generator.add_package('torch','2.7.1')
     requirements_generator.add_package('matplotlib','3.9.4')
-    requirements_generator.add_package('pandas','2.2.3')
+    requirements_generator.add_package('pandas','2.3.0')
 
 
 # #### #3-3 [uneditable]
@@ -162,7 +162,7 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_name('eval_model_adversarial_robustness')
     manifest_genenerator.set_ait_description('深層学習モデルに対して、入力データに摂動を加え敵対的データを距離尺度の制約下で生成し、摂動に対する強度と予測性能の変化を評価して頑強性を測定する。分類モデルの場合、各クラスごとの入力画像データに摂動を加え敵対的データを生成する。攻撃手法はSquare Attackを使用する。また、回帰モデルの場合、入力テーブルデータに摂動を加え敵対的データを生成する。攻撃手法はFastGradientMethodを使用する。')
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_model_adversarial_robustness')
-    manifest_genenerator.set_ait_version('1.3')
+    manifest_genenerator.set_ait_version('1.4')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('Robustness')
     manifest_genenerator.add_ait_keywords('Adversarial')
