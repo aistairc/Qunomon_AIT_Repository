@@ -38,7 +38,7 @@
 
 # [uneditable]
 
-# In[1]:
+# In[ ]:
 
 
 # Determine whether to start AIT or jupyter by startup argument
@@ -89,10 +89,10 @@ if not is_ait_launch:
 
 
 if not is_ait_launch:
-    requirements_generator.add_package('pandas', '2.2.3')
-    requirements_generator.add_package('numpy','1.26.4')
-    requirements_generator.add_package('torch','2.5.1')
-    requirements_generator.add_package('h5py','3.12.1')
+    requirements_generator.add_package('pandas', '2.3.0')
+    requirements_generator.add_package('numpy','2.0.2')
+    requirements_generator.add_package('torch','2.7.1')
+    requirements_generator.add_package('h5py','3.14.0')
     requirements_generator.add_package('matplotlib','3.9.3')
     requirements_generator.add_package('opencv-python-headless','4.10.0.84')
     requirements_generator.add_package('scipy','1.13.1')
@@ -161,7 +161,7 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_name('alyz_dataset_topcoverage_auc')
     manifest_genenerator.set_ait_description('データセットにおけるデータの分布のデータ密度が高い領域から考えて、上位p%の領域の面積をSとする。pの値を0から1に変化させたときの面積Sの変化を確認することでデータの均一性を判断する。テーブルデータセットの場合は、指定された列の分布を使用し、指定された列で組分けを行い均一性を測定する。画像データセットの場合は物体の面積比率、平均明度、および物体の中心座標の原点からの距離の分布を使用する。')
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/alyz_dataset_topcoverage_auc')
-    manifest_genenerator.set_ait_version('1.2')
+    manifest_genenerator.set_ait_version('1.3')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('AUC')
     manifest_genenerator.add_ait_keywords('TopCoverage')
