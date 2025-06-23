@@ -89,10 +89,10 @@ if not is_ait_launch:
 
 
 if not is_ait_launch:
-    requirements_generator.add_package('pandas','2.2.3')
+    requirements_generator.add_package('pandas','2.3.0')
     requirements_generator.add_package('ipywidgets','8.1.5')
-    requirements_generator.add_package('transformers','4.46.3')
-    requirements_generator.add_package('torch','2.5.1')
+    requirements_generator.add_package('transformers','4.52.4')
+    requirements_generator.add_package('torch','2.7.1')
 
 
 # #### #3-3 [uneditable]
@@ -154,7 +154,7 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_name('eval_llm_meteor_score')
     manifest_genenerator.set_ait_description('LLMモデルで翻訳タスクを実行し、生成された翻訳テキストの品質をMETEORスコアで評価します。このスコアを使用して、翻訳の品質を数値化し、モデル性能を測定します。')
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_llm_meteor_score')
-    manifest_genenerator.set_ait_version('1.0')
+    manifest_genenerator.set_ait_version('1.1')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('LLM')
     manifest_genenerator.add_ait_keywords('METEOR')
