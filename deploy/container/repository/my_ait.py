@@ -89,19 +89,19 @@ if not is_ait_launch:
 
 
 if not is_ait_launch:
-    requirements_generator.add_package('pandas', '2.2.3')
+    requirements_generator.add_package('pandas', '2.3.0')
     requirements_generator.add_package('evaluate', '0.4.3')
-    requirements_generator.add_package('transformers', '4.46.3')
+    requirements_generator.add_package('transformers', '4.53.0')
     requirements_generator.add_package('pycocoevalcap', '1.2')
     requirements_generator.add_package('ipywidgets', '8.1.5')
-    requirements_generator.add_package('torch', '2.5.1')
-    requirements_generator.add_package('torchvision', '0.20.1')
-    requirements_generator.add_package('torchaudio', '2.5.1')
+    requirements_generator.add_package('torch', '2.7.1')
+    requirements_generator.add_package('torchvision', '0.22.1')
+    requirements_generator.add_package('torchaudio', '2.7.1')
 
 
 # #### #3-3 [uneditable]
 
-# In[5]:
+# In[7]:
 
 
 if not is_ait_launch:
@@ -129,7 +129,7 @@ import torch
 
 # #### #4-2 [uneditable]
 
-# In[7]:
+# In[ ]:
 
 
 # must use modules
@@ -148,7 +148,7 @@ from ait_sdk.develop.annotation import measures, resources, downloads, ait_main 
 
 # [required]
 
-# In[8]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -157,7 +157,7 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_name('eval_llm_cider_score')
     manifest_genenerator.set_ait_description('LLMモデルで問題領域の質問に対して回答し、その生成されたテキストの品質を評価します。LLM評価基準を用いて、回答テキストのCIDErスコアを計算し、テキストの質を数値化します。')
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_Repository/tree/eval_llm_cider_score')
-    manifest_genenerator.set_ait_version('1.0')
+    manifest_genenerator.set_ait_version('1.1')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('LLM')
     manifest_genenerator.add_ait_keywords('CIDEr')
@@ -191,7 +191,7 @@ if not is_ait_launch:
 
 # [required]
 
-# In[9]:
+# In[ ]:
 
 
 if not is_ait_launch:
@@ -208,7 +208,7 @@ if not is_ait_launch:
 
 # [uneditable]
 
-# In[10]:
+# In[ ]:
 
 
 logger = get_logger()
@@ -238,7 +238,7 @@ ait_manifest.read_json(path_helper.get_manifest_file_path())
 
 # [required]
 
-# In[11]:
+# In[ ]:
 
 
 @log(logger)
@@ -247,7 +247,7 @@ def output_score(cider_score):
     return cider_score
 
 
-# In[12]:
+# In[ ]:
 
 
 @log(logger)
@@ -256,7 +256,7 @@ def eval_result(eval_table, file_path: str=None) -> str:
     eval_table.to_csv(file_path, index=False)
 
 
-# In[13]:
+# In[ ]:
 
 
 @log(logger)
@@ -265,7 +265,7 @@ def save_sample_data_csv(df, file_path: str=None) -> None:
     df.to_csv(file_path)
 
 
-# In[14]:
+# In[ ]:
 
 
 @log(logger)
@@ -274,7 +274,7 @@ def move_log(file_path: str=None) -> str:
     shutil.move(get_log_path(), file_path)
 
 
-# In[15]:
+# In[ ]:
 
 
 # CIDErスコアを計算
@@ -294,7 +294,7 @@ def calculate_cider_score(generated, references):
 
 # [required]
 
-# In[16]:
+# In[ ]:
 
 
 @log(logger)
@@ -363,7 +363,7 @@ def main() -> None:
 
 # [uneditable]
 
-# In[17]:
+# In[ ]:
 
 
 if __name__ == '__main__':

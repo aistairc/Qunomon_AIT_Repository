@@ -1,9 +1,10 @@
-pandas==2.2.3
+pandas==2.3.0
 evaluate==0.4.3
-transformers==4.46.3
+transformers==4.53.0
 pycocoevalcap==1.2
 ipywidgets==8.1.5
-torch==2.5.1
-torchvision==0.20.1
-torchaudio==2.5.1
+torch==2.7.1
+torchvision==0.22.1
+torchaudio==2.7.1
+./ait_sdk-0.1.24-py3-none-any.whl
 ./ait_sdk-0.1.24-py3-none-any.whl
